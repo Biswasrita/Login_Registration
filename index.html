@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auth System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h1 id="form-title">Signup</h1>
+
+    <form id="auth-form">
+      <div>
+        <label for="firstname-input"><i class="fa-solid fa-user"></i></label>
+        <input type="text" id="firstname-input" placeholder="Firstname" />
+      </div>
+      <div>
+        <label for="email-input"><span>@</span></label>
+        <input type="email" id="email-input" placeholder="Email" required />
+      </div>
+      <div>
+        <label for="password-input"><i class="fa-solid fa-lock"></i></label>
+        <input type="password" id="password-input" placeholder="Password" required />
+      </div>
+      <div id="confirm-pass-wrapper">
+        <label for="repeat-password-input"><i class="fa-solid fa-lock"></i></label>
+        <input type="password" id="repeat-password-input" placeholder="Confirm Password" />
+      </div>
+
+      <div class="show-pass">
+        <input type="checkbox" id="show-password" />
+        <label for="show-password">Show Password</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="toggle-text">
+      Already have an account? <a href="#" id="toggle-link">Login</a>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
